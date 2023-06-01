@@ -141,6 +141,21 @@ function saveSurveyData() {
   localStorage.setItem("surveyData", jsonData);
   console.log("Survey data saved to local storage.");
   }
+function getSurveyData() {
+  var jsonData = localStorage.getItem("surveyData");
+  if (jsonData) {
+    var surveyData = JSON.parse(jsonData);
+    console.log("Survey data retrieved from local storage:")     
+    console.log(surveyData);
+
+  } else {
+    console.log("No survey data found in local storage.");
+
+  }
+
+}
+
+
 
   function submitSurvey() {
       var answer = getSelectedAnswer();
