@@ -1,3 +1,3 @@
 # customersurvey
 
-in this I have used basic html,css,javascript dor a customer survey for people
+in this I have used basic html,css,javascript for a customer survey for people
