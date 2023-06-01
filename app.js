@@ -132,9 +132,14 @@
       saveSurveyData();
   }
 
-  function saveSurveyData() {
-      // Save surveyData to the database or local storage
-      console.log(surveyData);
+ 
+  
+function saveSurveyData() {
+
+  var surveyData = { /* survey data object */ };
+  var jsonData = JSON.stringify(surveyData);
+  localStorage.setItem("surveyData", jsonData);
+  console.log("Survey data saved to local storage.");
   }
 
   function submitSurvey() {
