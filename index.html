@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="welcome-screen">
+            <h1>Welcome to our Shop</h1>
+            <p>Thank you for choosing our shop. Please take a moment to complete the survey.</p>
+            <div class="button-container">
+                <button class="button" id="startButton">Start Survey</button>
+            </div>
+        </div>
+
+        <div class="survey-screen" style="display: none;">
+            <h2>Customer Survey</h2>
+            <div class="question">
+                <div class="question-number" id="questionNumber"></div>
+                <div id="questionText"></div>
+            </div>
+            <div class="question-options" id="questionOptions"></div>
+            <div class="button-container">
+                <button class="button" id="previousButton">Previous</button>
+                <button class="button" id="skipButton">Skip</button>
+                <button class="button" id="nextButton">Next</button>
+                <button class="button" id="submitButton">Submit</button>
+            </div>
+        </div>
+
+        <div class="completion-screen" style="display: none;">
+            <h1>Thank You!</h1>
+            <p>Thank you for completing the survey. Your feedback is greatly appreciated. <br>Thank you for visiting the shop and please come again.</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
